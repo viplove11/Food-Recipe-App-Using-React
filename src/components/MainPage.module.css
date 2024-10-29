@@ -1,0 +1,25 @@
+.mainPage {
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center items vertically */
+  gap: 50px;
+  justify-content: space-between; /* Space items evenly */
+  padding: 10px; /* Optional: Add some padding */
+}
+.appLogo {
+  width: 200px; /* Set a specific width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width:700px) {
+  .mainPage{
+    flex-direction: column; /* Change layout to vertical */
+    /* align-items: flex-start; Align items to the start */
+    justify-content: center;
+    gap: 10px; /* Reduce gap */
+  }
+  .appLogo{
+    width: 100px;
+    height: auto;
+    align-items: center;
+  }
+}
